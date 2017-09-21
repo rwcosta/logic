@@ -11,7 +11,7 @@
 #define IMP(b1, b2)       (b1 && !b2 ? FALSE : TRUE)
 
 // macro para calcular o valor da bi implicacao
-#define BIMP(b1, b2)      (b1 == b2 ? TRUE : FALSE)
+#define BIMP(b1, b2)      (b1 == b2)
 
 //
 // A fórmula calculada pelo codigo eh' 
