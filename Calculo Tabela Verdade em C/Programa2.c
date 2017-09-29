@@ -58,7 +58,7 @@ Formula* cria_formula(Tipo tipo, Formula *dir, Formula *esq)
   res->dir = dir;
   res->esq = esq;
   res->satis = FALSE; // Assume de inicio que a formula nao eh Satisfatoria
-  res->taut = TRUE; // Assume de inicio que a formula eh Tautologia
+  res->taut = TRUE;   // Assume de inicio que a formula eh Tautologia
 
   return res;
 }
