@@ -11,7 +11,7 @@ proof -
   proof -
     assume p: "P"
     from pr and p have r: "\<not>R" by (rule impE)
-    from pqr and r have pq: "P \<longrightarrow> Q" by (rule disjE)  //Acho que se inverter a ordem da certo.., 'colocar r and pqr'.
+    from pqr and r have pq: "P \<longrightarrow> Q" by (rule disjE)
     from pq and p show "Q" by (rule impE)
   qed
   from this show "P \<longrightarrow> Q" by (rule impI)
