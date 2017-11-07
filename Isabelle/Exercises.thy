@@ -10,8 +10,8 @@ proof -
   have imp: "P \<Longrightarrow> Q"
   proof -
     assume p: "P"
-    from pr and p have r: "\<not>R" by (rule impE)
-    from pqr and r have pq: "P \<longrightarrow> Q" by (rule disjE)
+    from pr and p have nr: "\<not>R" by (rule impE)
+    from pqr and nr have pq: "P \<longrightarrow> Q" by (???)
     from pq and p show "Q" by (rule impE)
   qed
   from this show "P \<longrightarrow> Q" by (rule impI)
